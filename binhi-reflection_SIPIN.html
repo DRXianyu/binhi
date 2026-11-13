@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Ain’t in PNA? · Xian’s Binhi Reflection</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2fa;--surface:#fff;--ink:#1f2a4d;--mute:#5d6a8c;--line:#d5dcee;--x:#4f5fe8;--j:#d9566a;--sun:#f2b84b;--xs:#e4e7fd;--js:#fbe3e7;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#12172b;--surface:#1b2240;--ink:#e9edfb;--mute:#9aa6cc;--line:#2f3a64;--x:#8c98ff;--j:#f08a9b;--xs:#262f63;--js:#4a2733}}
+:root[data-theme="dark"]{--bg:#12172b;--surface:#1b2240;--ink:#e9edfb;--mute:#9aa6cc;--line:#2f3a64;--x:#8c98ff;--j:#f08a9b;--xs:#262f63;--js:#4a2733}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+body{margin:0;overflow-x:clip;background:radial-gradient(60vmax 50vmax at 100% 0,color-mix(in srgb,var(--x) 16%,transparent),transparent) fixed,radial-gradient(50vmax 40vmax at 0 100%,color-mix(in srgb,var(--j) 14%,transparent),transparent) fixed,var(--bg);color:var(--ink);font:17px/1.65 "DM Sans",system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:700;line-height:1.1;margin:0}
+.wrap{max-width:900px;margin:0 auto;padding:0 20px}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:2px}
+header.hero{padding:64px 0 40px}
+.hero small{display:block;color:var(--mute);margin-bottom:18px;font-size:15px}
+.hero h1{font-size:clamp(44px,9vw,92px);letter-spacing:-.02em}
+.hero h1 i{font-weight:500;color:var(--x)}
+.hero p{max-width:52ch;color:var(--mute);margin:20px 0 0}
+nav{display:flex;gap:8px;flex-wrap:wrap;margin-top:28px}
+nav a{padding:9px 16px;border-radius:99px;background:var(--surface);border:1px solid var(--line);text-decoration:none;font-weight:500;font-size:15px}
+nav a:hover{border-color:var(--x)}
+section{padding:56px 0 24px}
+.band{background:var(--sun);color:#2a2100;padding:18px 24px;border-radius:14px 14px 14px 4px;margin-bottom:28px}
+.band h2{font-size:clamp(26px,5vw,38px)}
+.band p{margin:6px 0 0;font-size:15px}
+details.q{background:var(--surface);border:1px solid var(--line);border-radius:12px;margin-bottom:12px}
+details.q>summary{cursor:pointer;padding:18px 22px;font-family:Fraunces,Georgia,serif;font-weight:700;font-size:20px;line-height:1.3;list-style:none;display:flex;justify-content:space-between;gap:16px}
+details.q>summary::-webkit-details-marker{display:none}
+details.q>summary::after{content:"+";color:var(--x);font-size:26px;line-height:1}
+details.q[open]>summary::after{content:"–"}
+.ans{padding:0 22px 22px}
+.ans p{margin:0 0 14px;max-width:68ch}
+.hint{color:var(--mute);font-size:14.5px;font-style:italic;margin:-6px 0 14px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:14px}
+.tabs button,.filters button{font:inherit;font-size:15px;font-weight:500;padding:8px 16px;border-radius:99px;border:1px solid var(--line);background:var(--bg);color:var(--ink);cursor:pointer}
+.tabs button[aria-selected="true"],.filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.sense{background:var(--bg);border-radius:10px;padding:16px 18px;max-width:68ch}
+.sense p{margin:0}
+.title-card{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--x);border-radius:12px;padding:20px 24px;margin-bottom:20px}
+.title-card h3{font-size:clamp(24px,4.5vw,34px)}
+.title-card span{color:var(--mute);font-size:14px}
+/* Part II */
+.cast{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px}
+.person{font:inherit;color:inherit;text-align:center;background:var(--surface);border:2px solid var(--line);border-radius:16px;padding:18px 10px 14px;cursor:pointer}
+.person svg{width:130px;height:190px}
+.person b{display:block;font-family:Fraunces,Georgia,serif;font-size:22px}
+.person em{font-style:normal;font-size:14px;color:var(--mute)}
+.person[aria-pressed="true"].x{border-color:var(--x);background:var(--xs)}
+.person[aria-pressed="true"].j{border-color:var(--j);background:var(--js)}
+#fx-c{position:fixed;inset:0;width:100%;height:100%;pointer-events:none;z-index:50}.person{transition:transform .15s}.person:active{transform:scale(.96)}.person.revealed svg{--bo:1}.person .tap{display:block;font-size:13px;color:var(--mute);margin-top:2px}.person.revealed .tap{display:none}
+.profile{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 24px;margin-bottom:36px}
+.profile h3{font-size:24px;margin-bottom:10px}
+.profile dl{display:grid;grid-template-columns:max-content 1fr;gap:6px 22px;margin:0}
+.profile dt{color:var(--mute);font-size:15px}
+.profile dd{margin:0;font-weight:700}
+.pending{color:var(--mute);font-weight:500!important;font-style:italic}
+.filters{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 18px;align-items:center}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;color:var(--mute);margin-bottom:12px}
+.legend i{display:inline-block;width:34px;vertical-align:middle;margin-right:6px}
+.row{background:var(--surface);border:1px solid var(--line);border-radius:12px;margin-bottom:8px;overflow:hidden}
+.row button{all:unset;box-sizing:border-box;cursor:pointer;display:grid;grid-template-columns:1fr 1.1fr 1fr;gap:14px;align-items:center;padding:12px 18px;width:100%}
+.row button:focus-visible{outline:3px solid var(--sun);outline-offset:-3px}
+.row .l{text-align:right;font-weight:700;color:var(--x)}
+.row .r{font-weight:700;color:var(--j)}
+.row .m{text-align:center;font-size:13.5px;color:var(--mute)}
+.row .m i{display:block;margin-top:5px;border-top:4px solid var(--ink)}
+.row.d .m i{border-top:3px dashed var(--mute)}
+.row.u .m i{border-top:3px dotted var(--line)}
+.row .note{padding:2px 22px 18px;color:var(--mute);font-size:15.5px;max-width:68ch;margin:0 auto}
+@media (max-width:620px){.row button{grid-template-columns:1fr;gap:2px;text-align:center}.row .l,.row .r{text-align:center}.profile dl{grid-template-columns:1fr}.profile dt{margin-top:6px}}
+#prog{position:fixed;top:0;left:0;height:5px;width:0;background:linear-gradient(90deg,var(--x),var(--j),var(--sun));z-index:60}
+#tg{position:fixed;top:calc(env(safe-area-inset-top,0px) + 14px);right:14px;z-index:40;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);font-size:20px;cursor:pointer}
+.hero h1{font-size:clamp(48px,11vw,112px);animation:rise .9s cubic-bezier(.2,.8,.2,1) both}
+.hero h1 i{background:linear-gradient(90deg,var(--x),var(--j),var(--x));background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent;animation:sh 7s linear infinite}
+@keyframes rise{from{opacity:0;transform:translateY(28px) skewY(2deg)}}
+@keyframes sh{to{background-position:-200% 0}}
+@keyframes bob{50%{transform:translateY(-7px)}}
+.marq{margin:40px -20px 0;transform:rotate(-1.5deg);background:var(--sun);color:#2a2100;overflow:hidden;white-space:nowrap;border-block:3px solid var(--ink)}
+.marq div{display:inline-block;padding:10px 0;font:700 21px Fraunces,Georgia,serif;animation:mq 30s linear infinite}
+@keyframes mq{to{transform:translateX(-50%)}}
+.band{position:relative;overflow:hidden;padding-bottom:28px}
+.band::after{content:"";position:absolute;left:0;right:0;bottom:0;height:9px;background:linear-gradient(90deg,var(--x) 0 33%,var(--j) 33% 66%,var(--ink) 66%)}
+details.q{transition:transform .2s,box-shadow .2s}
+details.q:hover{transform:translateY(-2px);box-shadow:0 12px 26px -16px var(--x)}
+details.q[open]{border-left:6px solid var(--x)}
+.person:not(.revealed) svg{animation:bob 2.2s ease-in-out infinite}
+.profile{border-top:5px solid var(--x)}
+.meter{display:flex;gap:6px;height:48px;margin-bottom:18px}
+.meter button{min-width:0;padding:0 10px;border-radius:12px;font:700 15px "DM Sans",sans-serif;cursor:pointer}
+.meter .mc{background:var(--x);border:3px solid var(--x);color:var(--bg)}
+.meter .md{background:transparent;border:3px dashed var(--mute);color:var(--ink)}
+.row{transition:transform .15s}.row:hover{transform:translateX(4px)}
+.row.c{border-left:6px solid var(--x)}.row.d{border-left:6px dashed var(--mute)}
+footer{padding:48px 0;color:var(--mute);font-size:14px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before{animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header class="hero">
+  <small>Binhi · Reflection by Xian</small>
+  <h1>Ain’t in PNA?: <i>a dream that didn’t live at home</i></h1>
+  <p>My Binhi kwentuhan with Nanay Josephine, told in three parts: the experience, the connections and disconnections between us, and what everyday activism means to me.</p>
+  <nav><a href="#p1">Part I · Experience</a><a href="#p2">Part II · Connections</a><a href="#p3">Part III · Activism</a></nav><div class="marq" id="marq" aria-hidden="true"></div>
+</header>
+
+<section id="p1">
+  <div class="band"><h2>Part I: My Binhi Experience</h2><p>Tap a question to read my answer.</p></div>
+  <div class="title-card"><span>My Binhi story title</span><h3>Ain’t in PNA?: A Dream that Didn’t Live at Home</h3></div>
+  <div id="p1q"></div>
+</section>
+
+<section id="p2">
+  <div class="band"><h2>Part II: Connections &amp; Disconnections</h2><p>Tap each person to reveal them and see their details. Tap any row to read the story behind it.</p></div>
+  <div class="cast">
+    <button class="person x" id="bx" aria-pressed="true"><svg viewBox="0 0 130 190" aria-hidden="true"><use href="#fx"/></svg><b>Xian (me)</b><em>boy · glasses</em><span class="tap">tap to reveal</span></button>
+    <button class="person j" id="bj" aria-pressed="false"><svg viewBox="0 0 130 190" aria-hidden="true"><use href="#fj"/></svg><b>Nanay Josephine</b><em>woman · 50s</em><span class="tap">tap to reveal</span></button>
+  </div>
+  <div class="profile" id="profile" aria-live="polite"></div>
+  <div class="meter" id="meter"></div><div class="legend"><span><i style="border-top:4px solid var(--ink)"></i>Connection</span><span><i style="border-top:3px dashed var(--mute)"></i>Disconnection</span></div>
+  <div class="filters" id="filters" role="group" aria-label="Filter comparison"></div>
+  <div id="rows"></div>
+</section>
+
+<section id="p3">
+  <div class="band"><h2>Part III: Reflection on Everyday Activism</h2><p>Tap a question to read my answer.</p></div>
+  <div id="p3q"></div>
+</section>
+<footer>Xian · Binhi reflection</footer>
+</div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<g id="fx"><g style="opacity:var(--bo,0);transform:translateY(calc((1 - var(--bo,0)) * -12px));transition:opacity .6s,transform .6s">
+  <rect x="38" y="108" width="20" height="70" rx="8" fill="#2b3566"/><rect x="72" y="108" width="20" height="70" rx="8" fill="#2b3566"/>
+  <rect x="30" y="64" width="70" height="60" rx="18" fill="#4f5fe8"/>
+  </g><circle cx="65" cy="38" r="26" fill="#f0c9a6"/>
+  <path d="M39 36c0-20 14-24 27-24s26 5 26 24c-8-10-18-12-26-12s-19 2-27 12z" fill="#26211f"/>
+  <g fill="none" stroke="#1f2a4d" stroke-width="3"><circle cx="55" cy="40" r="8.5"/><circle cx="77" cy="40" r="8.5"/><path d="M63.5 40h4.5"/></g>
+  <path d="M58 56q7 5 14 0" fill="none" stroke="#9a5d3a" stroke-width="2.5" stroke-linecap="round"/>
+</g>
+<g id="fj"><g style="opacity:var(--bo,0);transform:translateY(calc((1 - var(--bo,0)) * -12px));transition:opacity .6s,transform .6s">
+  <rect x="45" y="130" width="16" height="50" rx="7" fill="#e5b896"/><rect x="69" y="130" width="16" height="50" rx="7" fill="#e5b896"/>
+  <path d="M65 22c-30 0-36 26-32 56 2 14-2 26-6 34h76c-4-8-8-20-6-34 4-30-2-56-32-56z" fill="#33241f"/>
+  <path d="M42 66h46l18 74H24z" fill="#d9566a"/>
+  </g><circle cx="65" cy="40" r="25" fill="#e8bd98"/>
+  <path d="M40 38c2-18 14-22 25-22s23 4 25 22c-6-8-14-12-25-12s-19 4-25 12z" fill="#33241f"/>
+  <circle cx="56" cy="42" r="2.6" fill="#33241f"/><circle cx="74" cy="42" r="2.6" fill="#33241f"/>
+  <path d="M58 54q7 5 14 0" fill="none" stroke="#a24b4b" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M50 35q5-3 9 0M71 35q5-3 9 0" fill="none" stroke="#33241f" stroke-width="1.6"/>
+</g>
+</defs>
+</svg>
+
+<script>
+const P1=[
+{q:"1. How was my disposition before the area engagement?",h:"How did my day start? What were my expectations? What did I feel?",a:["During the morning of that day, I honestly woke up groggy since I remember reviewing for Math 31.1 the night before. As I swiftly went to the meeting venue, I expected little at first, that this day would be boring. Then and there, my mood was like a blank canvas, waiting for paint to splash me with vibrancy."]},
+{q:"2. What did I see, hear, feel, taste, and smell during the area engagement?",senses:[
+["Seeing","On the way to the area engagement, I enjoyed viewing my classmates around me. Their faces as they anticipated for what’s in store for the day. At the hall itself, it was the nanays and facilitators who were there. While watching the presentation projected on the wall, I glimpse back from time-to-time, seeing the faces of the nanays as they smiled when I looked back. It embraced my heart with the warmness of Filipino hospitality and boldness. When my group and I went to their house, it was not anything grand or extravagant, but it felt like home. That sense of security under the household as I see the fine wood shelves, messy cupboards, fuzzy carpet. For the family, I noticed that they were close. Just one call, and the bunso would come right away to the nanay."],
+["Hearing","In knowing my nanay more, I asked about her livelihood, what she does in her free time, and even her political affiliations. I noticed that she wasn’t that much of a sharer, though, and prefers just being there in the moment. As she said clearly, “Bihira na’ko mag-usap sa mga tao kasi palagi lang ako andito sa Bahay.” Given that she’s a house wife, her interactions with others aside from her family are quite minimal. She has thus grown to become an introvert, according to her. Yet, beyond that, I heard a calling within her. That although she’s a housewife, she had dreams before of working in a corporate environment. She expressed that she had to ultimately choose her family first."],
+["Feeling","As the discussions became fruitful, I felt at ease because the conversations were smooth and thoughtful. I learned more about my nanay, specifically her lived experiences, aspirations, struggles, and family. Similarly, I felt so happy because I enjoyed bonding with my groupmates through this Binhi program. I was able to talk with them more and develop stronger bonds."],
+["Taste","At the house of my nanay, I tasted the sweetness of Filipino familial love. Seeing the little moments of interactions of the bunso and the nanay really displayed the authenticity of Filipino love. It tasted like home."],
+["Smell","The home smelled of old books and painted walls. It felt nostalgic, a smell that brought me in my days of when I was a kid, living in my province home."]]},
+{q:"3. Share your most unforgettable experience/s from this Binhi experience.",h:"An event, learning, or person of significant value that moved you, and why.",a:["I would like to share two memories that left sweet scars. When my groupmates, I, the bunso, and our nanay were eating all together, it felt so heart-warming seeing the joyful moods of everyone as we stuffed our faces with food. It was as though we all connected via food. In that moment, their faces were something I’ll never forget. Definitely something that will mark my years in Ateneo.","Yet, it didn’t end there. As my classmates and I onboarded the jeep, hearing them play music and singing alongside them also inked my heart with a love for my blockmates. I knew at that very moment that this will be worth it, that choosing Ateneo was truly the more loving option — in pursuit of the magis."]}
+];
+const P3=[
+{q:"1. What intrapersonal resources did you use during kwentuhan? How do you combine them to push forward “everyday” advocacies?",a:["During kwentuhan, I exercised my intrapersonal resources of empathy, altruism, emotional regulation, and self-awareness. Drawing on Nielsen’s idea that everyday activism is rooted in ordinary interpersonal interactions, so having that translocal consciousness, I used these four resources to ensure that in my discussions with nanay, I was aware of what I was saying, checking if it was fit for the mood and emotion of the conversation, and then being empathetic of how they felt when expressing their sentiments. In a similar way, I was altruistic in taking their perspective in, ensuring that I didn’t keep talking, but instead allowed nanay to ask questions and fully express herself before I spoke.","In pushing for everyday advocacy and destructing structural inequalities, it honestly starts in casual conversations. Combining my self-awareness on socio-political matters with little conversations with friends, I bridge in my personal advocacies like embracing mental health and rejecting imperialist ideals (e.g., Pax Silica). Of course, I don’t talk in a way that sounds like I’m giving a lecture. At most, I bring up these types of topics when making small talk, asking simple questions about what they think on a certain matter or issue. Even if there is a contrast in perspectives, it is better to understand their stance than to condemn it. After all, we are all entitled to our own opinions."]},
+{q:"2. Can you think of other instances wherein you yourself have practiced everyday activism?",a:["Honestly, when my friend group says something quite insensitive, stereotypical, or offensive, I ask why they expressed that, and if they are unaware of the ramifications of their actions, I politely talk to them about it in private. This reflects Nielsen’s emphasis on social justice, where meaningful shifts in perspective happen through trusted peer-to-peer dialogue rather than public confrontation, thus being the connection between people and hierarchies. In a world so big, we don’t deserve hatred toward one another. We all have different races, ethnicities, languages, and nationalities, yet we are all humans sharing the same body, mind, and heart.","Furthermore, I ensure that everyone has a chance to speak during group discussions. Whenever someone finishes talking on a certain matter, I intentionally ask the person who hasn’t been able to answer or speak yet so that no one gets left out."]},
+{q:"3. Can you think of other opportunities wherein you could practice everyday activism? How do they embody its principles?",a:["Perhaps I could start going against the capitalist notion of consumerism by practicing more conscious consumption. In particular, I would boycott large chains and industries that conduct exploitative labor and harmful environmental practices, while actively choosing to support local artisans, small community businesses, and ethical brands instead. Beyond my spending habits, I can also practice everyday activism through mutual aid in my neighborhood — such as contributing to local community pantries or sharing skills like tutoring — and by using my social media to share educational resources and amplify underrepresented voices.","Although these actions might seem small on their own, change starts with one person and creates a domino effect. As Nielsen highlights, these opportunities embody the core principles of everyday activism because they rely on accessible, low-barrier routines that require no formal title or wealth, directly connecting our personal daily choices to larger systemic issues. By leading by example and rooting change in my immediate community, these habits can encourage peers to reflect on their own routines without feeling lectured. What matters most, however, is cumulative impact and consistency over intensity — ensuring that my acts of defiance and care gain long-term momentum instead of being a one-time thing."]}
+];
+function build(id,list){
+  const root=document.getElementById(id);
+  list.forEach((it,i)=>{
+    const d=document.createElement('details');d.className='q';if(i===0)d.open=true;
+    let body='<div class="ans">'+(it.h?'<p class="hint">'+it.h+'</p>':'');
+    if(it.senses){
+      body+='<div class="tabs" role="tablist">'+it.senses.map((s,k)=>'<button role="tab" aria-selected="'+(k===0)+'" data-k="'+k+'">'+s[0]+'</button>').join('')+'</div><div class="sense"><p></p></div>';
+    } else body+=it.a.map(t=>'<p>'+t+'</p>').join('');
+    d.innerHTML='<summary>'+it.q+'</summary>'+body+'</div>';
+    if(it.senses){
+      const p=d.querySelector('.sense p'),bs=d.querySelectorAll('.tabs button');
+      const show=k=>{p.textContent=it.senses[k][1];bs.forEach((b,j)=>b.setAttribute('aria-selected',j==k))};
+      bs.forEach(b=>b.onclick=()=>show(+b.dataset.k));show(0);
+    }
+    root.appendChild(d);
+  });
+}
+build('p1q',P1);build('p3q',P3);
+
+/* ===== Part II data — edit Nanay Josephine's column (j) here ===== */
+/* t: 'c' = connection, 'd' = disconnection, 'u' = not filled in yet. n = the story behind it. */
+const ROWS=[
+{k:"Age",x:"18",j:"52",t:"d",n:"Although the age gap may be stark, the wisdom she imparted from those experiences and unveiled through me are things that I'll remember for life."},
+{k:"Favorite food",x:"Ramen",j:"Sinigang",t:"c",n:"We both personally enjoy eating hearty meals during rainy seasons, especially if it has a soup base."},
+{k:"Personality type",x:"Introvert",j:"Introvert",t:"c",n:"Nanay told me she rarely talks with people outside her family because she is almost always at home. I am an introvert too, so we both understood the comfort of silence."},
+{k:"Socioeconomic class",x:"Upper middle class",j:"Lower class",t:"d",n:"Our socioeconomic class portrays the disparity in income between our families, but we still share the love of being a Filipino."},
+{k:"Family-orientedness",x:"Mid",j:"High",t:"d",n:"Nanay chose her family over her dream of working in a corporate setting. Just one call, and the bunso came right away to her."},
+{k:"Faith in God",x:"Catholic",j:"Catholic",t:"c",n:"We are both devoted believers of God, both sharing the same religion as well; that is, Catholicism."},
+{k:"Nationality",x:"Filipino",j:"Filipino",t:"c",n:"Having the same roots, we are both Filipinos."},
+{k:"Ideology",x:"Liberal",j:"Conservative",t:"d",n:"Based on our discussion and political color, she leans more onto the conservative side of politics. I, on the other hand, am much more liberal."},
+{k:"Education level",x:"Undergraduate",j:"High school",t:"d",n:"She wasn't able to start higher education as she had to prioritize her family first. I am fortunate enough, however, that I have the opportunity to study my bachelors."},
+{k:"Eyesight",x:"Bad",j:"Good",t:"d",n:"Her eyesight is good, never having the option to buy glasses. In contrast, I have glasses due to my poor eyesight."},
+{k:"Philosophy",x:"YOLO",j:"Family first",t:"d",n:"Our personal philosophies in life are different. She always prioritizes her family first, while I prioritize my well-being through 'you only live once'."},
+{k:"Generation",x:"Gen Z",j:"Generation X",t:"d",n:"She is a Gen X while I am Gen Z based on our ages."},
+{k:"Service",x:"Volunteer in ExplainedPH",j:"Volunteer in PMA",t:"c",n:"We both advocate service through volunteerism. She's a volunteer at Puso ng Ama Foundation while I'm a volunteer at ExplainedPH, a youth-powered journalism organization."},
+{k:"Type of music into",x:"OPM & pop",j:"OPM",t:"c",n:"I personally like both OPM and POP, while she just likes OPM, so at least we share one connection on music."}
+];
+const WHO={
+ x:{name:"Xian (me)",blurb:"A boy with glasses, 18."},
+ j:{name:"Nanay Josephine",blurb:"A woman in her 50s."}};
+const cv=document.createElement('canvas');cv.id='fx-c';cv.setAttribute('aria-hidden','true');document.body.appendChild(cv);
+const cc=cv.getContext('2d');let ps=[],raf=0;
+const still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function fit(){cv.width=innerWidth;cv.height=innerHeight}fit();addEventListener('resize',fit);
+function boom(x,y,n){
+  if(still)return;
+  const st=getComputedStyle(document.documentElement),cols=[st.getPropertyValue('--x'),st.getPropertyValue('--j'),st.getPropertyValue('--sun'),'#3ecf9b'];
+  for(let i=0;i<n;i++)ps.push({x,y,vx:(Math.random()-.5)*10,vy:-Math.random()*9-2,s:Math.random()*5+3,c:cols[i%4].trim(),a:Math.random()*6,va:(Math.random()-.5)*.4,l:1});
+  if(!raf)raf=requestAnimationFrame(tick);
+}
+function tick(){
+  cc.clearRect(0,0,cv.width,cv.height);
+  ps=ps.filter(p=>p.l>0);
+  ps.forEach(p=>{p.vy+=.28;p.x+=p.vx;p.y+=p.vy;p.vx*=.99;p.a+=p.va;p.l-=.013;cc.save();cc.globalAlpha=Math.max(p.l,0);cc.translate(p.x,p.y);cc.rotate(p.a);cc.fillStyle=p.c;cc.fillRect(-p.s,-p.s/2,p.s*2,p.s);cc.restore()});
+  raf=ps.length?requestAnimationFrame(tick):0;
+}
+addEventListener('pointerdown',e=>boom(e.clientX,e.clientY,16));
+const prog=document.createElement('div');prog.id='prog';document.body.appendChild(prog);
+addEventListener('scroll',()=>{const h=document.documentElement,m=h.scrollHeight-h.clientHeight;prog.style.width=(m>0?h.scrollTop/m*100:0)+'%'},{passive:true});
+const tg=document.createElement('button');tg.id='tg';tg.setAttribute('aria-label','Switch light and dark mode');document.body.appendChild(tg);
+const dk=()=>document.documentElement.dataset.theme?document.documentElement.dataset.theme==='dark':matchMedia('(prefers-color-scheme:dark)').matches;
+const paint=()=>{tg.textContent=dk()?'☀':'☾'};paint();
+tg.onclick=()=>{document.documentElement.dataset.theme=dk()?'light':'dark';paint()};
+document.getElementById('marq').innerHTML='<div>'+'Kwentuhan ✺ Binhi ✺ Nanay ✺ Bunso ✺ Magis ✺ '.repeat(8)+'</div>';
+function profile(w){
+  const p=document.getElementById('profile');
+  p.style.borderTop='5px solid var(--'+w+')';p.innerHTML='<h3 style="color:var(--'+w+')">'+WHO[w].name+'</h3><p class="hint" style="margin-top:0">'+WHO[w].blurb+'</p><dl>'+
+   ROWS.map(r=>{const v=r[w];const ph=/^placeholder$/i.test(v);return '<dt>'+r.k+'</dt><dd'+(ph?' class="pending"':'')+'>'+(ph?'to be filled in':v)+'</dd>'}).join('')+'</dl>';
+  ['x','j'].forEach(k=>document.getElementById('b'+k).setAttribute('aria-pressed',k===w));
+}
+const pick=w=>{const b=document.getElementById('b'+w);if(!b.classList.contains('revealed')){b.classList.add('revealed');const r=b.getBoundingClientRect();boom(r.left+r.width/2,r.top+r.height/2,70)}profile(w)};
+document.getElementById('bx').onclick=()=>pick('x');
+document.getElementById('bj').onclick=()=>pick('j');
+profile('x');
+let flt='all';
+const LAB={all:"All",c:"Connections",d:"Disconnections"};
+function rows(){
+  const f=document.getElementById('filters');
+  f.innerHTML=Object.keys(LAB).map(k=>'<button aria-pressed="'+(k===flt)+'" data-f="'+k+'">'+LAB[k]+' ('+(k==='all'?ROWS.length:ROWS.filter(r=>r.t===k).length)+')</button>').join('');
+  f.querySelectorAll('button').forEach(b=>b.onclick=()=>{flt=b.dataset.f;rows()});
+  const nc=ROWS.filter(r=>r.t==='c').length,nd=ROWS.length-nc;
+  const mt=document.getElementById('meter');mt.innerHTML='<button class="mc" style="flex:'+nc+'" data-f="c">'+nc+' connections</button><button class="md" style="flex:'+nd+'" data-f="d">'+nd+' disconnections</button>';
+  mt.querySelectorAll('button').forEach(b=>b.onclick=()=>{flt=flt===b.dataset.f?'all':b.dataset.f;rows()});
+  const box=document.getElementById('rows');box.innerHTML='';
+  ROWS.filter(r=>flt==='all'||r.t===flt).forEach(r=>{
+    const d=document.createElement('div');d.className='row '+r.t;
+    d.innerHTML='<button aria-expanded="false"><span class="l">'+r.x+'</span><span class="m">'+r.k+'<i></i></span><span class="r">'+r.j+'</span></button>';
+    const b=d.querySelector('button');let note=null;
+    b.onclick=()=>{
+      if(note){note.remove();note=null;b.setAttribute('aria-expanded','false');return}
+      note=document.createElement('p');note.className='note';note.textContent=r.n;d.appendChild(note);b.setAttribute('aria-expanded','true');
+    };
+    box.appendChild(d);
+  });
+}
+rows();
+</script>
+</body>
+</html>
